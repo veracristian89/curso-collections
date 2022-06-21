@@ -29,8 +29,8 @@ public class Clase5 {
 //		Collections.sort(cursos, Collections.reverseOrder());
 //		
 //		System.out.println(cursos);
-		
-		List<Curso> CursoList = cursos.stream().sorted(Comparator.comparingInt(Curso::getTiempo)).collect(Collectors.toList());
+												//utilizando lambda se ignora Ruby                         <---
+		List<Curso> CursoList = cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("Ruby")).sorted(Comparator.comparingInt(Curso::getTiempo)).collect(Collectors.toList());
 		
 		System.out.println(CursoList);
 	}
