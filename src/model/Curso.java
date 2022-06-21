@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Curso implements Comparable<Curso> {
@@ -33,7 +34,7 @@ public class Curso implements Comparable<Curso> {
 	}
 	
 	public List<Aula> getAulaList() {
-		return aulaList;
+		return Collections.unmodifiableList(aulaList);
 	}
 	public void setAulaList(List<Aula> aulaList) {
 		this.aulaList = aulaList;
