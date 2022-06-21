@@ -2,7 +2,7 @@ package ar.com.alura;
 
 import java.util.ArrayList;
 
-public class clase2 {
+public class Clase2 {
 
 	public static void main(String[] args) {
 		String variable1 = "Ejemplo 1";

@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import model.Curso;
+
 public class Clase5 {
 	
 	public static void main(String[] args) {
