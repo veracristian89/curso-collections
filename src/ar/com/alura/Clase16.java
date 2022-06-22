@@ -10,11 +10,11 @@ import java.util.Set;
 import model.Alumno;
 import model.Curso;
 
-public class Clase15 {
+public class Clase16 {
 	
 	public static void main(String[] args) {
 		
-Curso curso1 = new Curso("Historia", 30);
+		Curso curso1 = new Curso("Historia", 30);
 
 		
 		Alumno alumno1 = new Alumno("Luis Miguel", "001");
@@ -25,9 +25,6 @@ Curso curso1 = new Curso("Historia", 30);
 		Alumno alumno6 = new Alumno("Marcia maria", "006");
 		Alumno alumno7 = new Alumno("Claudia Patricia", "007");
 
-
-
-		Collection<Alumno> listaAlumnos = new HashSet<>();
 		
 		curso1.addAlumno(alumno1);
 		curso1.addAlumno(alumno2);
@@ -38,11 +35,9 @@ Curso curso1 = new Curso("Historia", 30);
 		curso1.addAlumno(alumno7);
 		
 
-		Alumno alumnoNuevo = new Alumno("Luis Miguel", "001");
+		curso1.getAlumnos().forEach(alumno -> System.out.println(alumno));
 		
-		System.out.println(alumno1.equals(alumnoNuevo));
-		System.out.println(curso1.verificaAlumno(alumnoNuevo));
-		
+		Iterator<Alumno> alumnoIterator = curso1.getAlumnos().iterator();
 		
 	}
 	
